@@ -12,11 +12,6 @@ const mongoose = require('mongoose');
 
 const ItemSchema = mongoose.Schema(
   {
-    id: {
-      type: String,
-      required: true,
-    },
-
     name: {
       type: String,
       required: [true, 'Item name is required!'],

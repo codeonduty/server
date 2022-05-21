@@ -23,7 +23,7 @@ mongoose.connection
   .once('open', function () {
     console.log('Database connection successful...');
   })
-  .on('error', () => {
+  .on('error', (error) => {
     console.log('Database connection failure...', error);
   });
 

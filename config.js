@@ -19,7 +19,8 @@ dotenv.config();
 const config = {
   PORT: process.env.PORT || 5000,
   MONGODB_URI:
-    process.env.MONGODB_URI || 'mongodb://localhost:27017/shopping-list',
+    'mongodb+srv://duty:duty@cluster0.5ts0l.mongodb.net/?retryWrites=true&w=majority' ||
+    'mongodb://localhost:27017/shopping-list',
   JWT_SECRET: process.env.JWT_SECRET || "mum's the word",
   MAXIMUM_TOKEN_AGE: '1h',
 };

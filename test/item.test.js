@@ -38,7 +38,7 @@ describe('Item', () => {
 
     describe('Given item exists...', () => {
       it('...returns item from database', async () => {
-        const itemID = '626fb3f0ea959d1c36e456cf';
+        const itemID = '6288745a63b40ec0ad80bb26';
 
         const itemName = 'Airpods Wireless Bluetooth Headphones';
 
