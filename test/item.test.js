@@ -3,7 +3,6 @@
 // Libraries:
 
 const supertest = require('supertest');
-const mongoose = require('mongoose');
 
 // Modules:
 
@@ -20,6 +19,8 @@ describe('Item', () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
+
+    jest.setTimeout(20 * 1000);
   });
 
   afterAll(async () => {
@@ -61,7 +62,6 @@ describe('Item', () => {
           '/api/item/catalogue'
         );
 
-        console.log(body);
         expect(statusCode).toBe(200);
         //expect(body).toBe();
       });
