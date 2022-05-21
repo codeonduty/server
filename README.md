@@ -12,7 +12,7 @@
 
 <div align='center'>
 <img src="https://github.com/codeonduty/server/actions/workflows/test.yml/badge.svg">
-<img src='https://coveralls.io/repos/github/codeonduty/server/badge.svg?branch=main' alt='Coverage Status' />
+[![codecov](https://codecov.io/gh/codeonduty/server/branch/master/graph/badge.svg?token=yzYW4igreo)](https://codecov.io/gh/codeonduty/server)
 
 </div>
 
