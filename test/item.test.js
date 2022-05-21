@@ -12,6 +12,8 @@ const database = require('./../database');
 
 // Code:
 
+jest.setTimeout(20 * 1000);
+
 describe('Item', () => {
   beforeAll(async () => {
     // Initialize database
@@ -19,8 +21,6 @@ describe('Item', () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-
-    jest.setTimeout(20 * 1000);
   });
 
   afterAll(async () => {
