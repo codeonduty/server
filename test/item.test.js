@@ -30,7 +30,7 @@ describe('Item', () => {
   describe('GET /api/item/:id', () => {
     describe('Given item does not exist...', () => {
       it('...returns 404 status status code', async () => {
-        const itemID = mongoose.Types.ObjectId('reqwfdsfasfd');
+        const itemID = '626fb3f0ea959d1c36e456cf';
 
         await supertest(application).get(`/api/item/${itemID}`).expect(404);
       });
